@@ -260,7 +260,7 @@ const translations = {
 };
 
 const state = {
-  lang: "ru",
+  lang: "en",
   occasion: "birthday",
   budget: "60-120 GEL",
   service: ""
@@ -275,7 +275,7 @@ function getInitialLang() {
   const browserLang = navigator.language.slice(0, 2);
   if (browserLang === "ka") return "ka";
   if (browserLang === "en") return "en";
-  return "ru";
+  return "en";
 }
 
 function applyLanguage(lang) {
@@ -421,6 +421,16 @@ function init() {
     mapObserver.observe(mapFrame);
   } else if (mapFrame) {
     mapFrame.src = mapFrame.dataset.mapSrc;
+  }
+
+  const mobileCta = $(".mobile-cta");
+  const orderSection = $(".order-section");
+  if (mobileCta && orderSection && "IntersectionObserver" in window) {
+    const ctaObserver = new IntersectionObserver((entries) => {
+      const orderVisible = entries.some((entry) => entry.isIntersecting);
+      mobileCta.classList.toggle("is-hidden", orderVisible);
+    }, { threshold: 0.12 });
+    ctaObserver.observe(orderSection);
   }
 
   applyLanguage(getInitialLang());

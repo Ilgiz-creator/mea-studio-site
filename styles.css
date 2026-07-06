@@ -398,6 +398,10 @@ fieldset {
   border: 0;
 }
 
+label {
+  min-width: 0;
+}
+
 legend,
 label span {
   display: block;
@@ -437,7 +441,10 @@ label span {
 
 input,
 textarea {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   min-height: 40px;
   padding: 10px 12px;
   color: var(--ink);
@@ -448,6 +455,17 @@ textarea {
 
 textarea {
   resize: vertical;
+}
+
+input[type="date"] {
+  -webkit-appearance: none;
+  appearance: none;
+  line-height: 1.4;
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+  min-height: 1.4em;
+  text-align: left;
 }
 
 input:focus,
@@ -894,10 +912,18 @@ a:focus-visible {
 
   .collection-card {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 
   .collection-card img {
+    height: auto;
     aspect-ratio: 4 / 3.2;
+  }
+
+  .collection-card div {
+    position: relative;
+    z-index: 1;
+    background: var(--shell);
   }
 
   .wedding-band img {
@@ -945,7 +971,14 @@ a:focus-visible {
     border-radius: 8px;
     box-shadow: 0 18px 40px rgba(23, 32, 25, 0.22);
     text-decoration: none;
+    transition: opacity 160ms ease, transform 160ms ease;
     font-weight: 700;
+  }
+
+  .mobile-cta.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(120%);
   }
 }
 
