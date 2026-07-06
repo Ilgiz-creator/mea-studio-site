@@ -28,7 +28,6 @@ const translations = {
     occasionBirthday: "День рождения",
     occasionRomance: "Романтика",
     occasionWedding: "Свадьба",
-    occasionThanks: "Благодарность",
     occasionOther: "Другое",
     budgetLabel: "Примерный бюджет",
     dateLabel: "Дата",
@@ -78,12 +77,13 @@ const translations = {
     messageName: "Имя",
     messageComment: "Комментарий",
     messageService: "Хочу похожий формат",
+    messageOrderDetails: "Детали заказа",
+    messageAdditionalDetails: "Дополнительно",
     noDate: "уточню в переписке",
     occasionValues: {
       birthday: "день рождения",
       romance: "романтический подарок",
       wedding: "свадьба или событие",
-      thanks: "благодарность",
       other: "другое"
     }
   },
@@ -113,7 +113,6 @@ const translations = {
     occasionBirthday: "Birthday",
     occasionRomance: "Romance",
     occasionWedding: "Wedding",
-    occasionThanks: "Thank you",
     occasionOther: "Other",
     budgetLabel: "Approx. budget",
     dateLabel: "Date",
@@ -163,12 +162,13 @@ const translations = {
     messageName: "Name",
     messageComment: "Comment",
     messageService: "I want a similar format",
+    messageOrderDetails: "Order details",
+    messageAdditionalDetails: "Additional details",
     noDate: "I will confirm in chat",
     occasionValues: {
       birthday: "birthday",
       romance: "romantic gift",
       wedding: "wedding or event",
-      thanks: "thank-you gift",
       other: "other"
     }
   },
@@ -198,7 +198,6 @@ const translations = {
     occasionBirthday: "დაბადების დღე",
     occasionRomance: "რომანტიკა",
     occasionWedding: "ქორწილი",
-    occasionThanks: "მადლობა",
     occasionOther: "სხვა",
     budgetLabel: "სავარაუდო ბიუჯეტი",
     dateLabel: "თარიღი",
@@ -248,12 +247,13 @@ const translations = {
     messageName: "სახელი",
     messageComment: "კომენტარი",
     messageService: "მსგავსი ფორმატი მინდა",
+    messageOrderDetails: "შეკვეთის დეტალები",
+    messageAdditionalDetails: "დამატებით",
     noDate: "მიმოწერაში დავაზუსტებ",
     occasionValues: {
       birthday: "დაბადების დღე",
       romance: "რომანტიკული საჩუქარი",
       wedding: "ქორწილი ან ღონისძიება",
-      thanks: "მადლობის საჩუქარი",
       other: "სხვა"
     }
   }
@@ -331,11 +331,12 @@ function buildMessage() {
   const lines = [
     dictionary.messageHello,
     "",
+    `${dictionary.messageOrderDetails}:`,
     ...details
   ];
 
   if (extra.length) {
-    lines.push("", ...extra);
+    lines.push("", `${dictionary.messageAdditionalDetails}:`, ...extra);
   }
 
   return lines.join("\n");
@@ -362,7 +363,7 @@ function presetService(serviceKey, budget) {
   const title = dictionary[`${serviceKey}Title`] || "";
   const occasionByService = {
     cardOne: "romance",
-    cardTwo: "thanks",
+    cardTwo: "other",
     cardThree: "birthday"
   };
   state.service = title;
