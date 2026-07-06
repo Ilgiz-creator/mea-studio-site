@@ -23,7 +23,7 @@
       "description": "Flower shop in Batumi with bouquets, wedding florals and same-day delivery.",
       "image": "assets/photos/hero-pink-rose-bouquet.jpg",
       "telephone": "+995595009529",
-      "priceRange": "60-270 GEL",
+      "priceRange": "60+ GEL",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Mikhail Lermontov St. 10",
@@ -53,9 +53,9 @@
       <a href="#contact" data-i18n="navContact">Контакты</a>
     </nav>
     <div class="lang-switch" aria-label="Language">
-      <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
-      <button type="button" class="lang-btn" data-lang="ka" aria-pressed="false">GE</button>
       <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      <button type="button" class="lang-btn" data-lang="ka" aria-pressed="false">GE</button>
+      <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
     </div>
   </header>
 
@@ -98,25 +98,28 @@
         <div class="order-intro">
           <p class="eyebrow" data-i18n="orderKicker">Быстрый заказ</p>
           <h2 id="order-title" data-i18n="orderTitle">Собрать заказ</h2>
-          <p data-i18n="orderIntro">Выберите повод, бюджет и дату. Мы получим готовое сообщение в WhatsApp и быстро уточним детали букета.</p>
+          <p data-i18n="orderIntro">Выберите повод, примерный бюджет и дату. Если нужен большой букет или оформление, выбирайте 270+.</p>
         </div>
 
         <form class="order-panel" id="quick-order">
           <fieldset>
             <legend data-i18n="occasionLabel">Повод</legend>
             <div class="chip-row" data-chip-group="occasion">
-              <button type="button" class="chip is-active" data-value="bouquet" data-i18n="occasionBouquet">Букет</button>
+              <button type="button" class="chip is-active" data-value="birthday" data-i18n="occasionBirthday">День рождения</button>
+              <button type="button" class="chip" data-value="romance" data-i18n="occasionRomance">Романтика</button>
               <button type="button" class="chip" data-value="wedding" data-i18n="occasionWedding">Свадьба</button>
-              <button type="button" class="chip" data-value="delivery" data-i18n="occasionDelivery">Доставка</button>
+              <button type="button" class="chip" data-value="thanks" data-i18n="occasionThanks">Благодарность</button>
+              <button type="button" class="chip" data-value="other" data-i18n="occasionOther">Другое</button>
             </div>
           </fieldset>
 
           <fieldset>
-            <legend data-i18n="budgetLabel">Бюджет</legend>
+            <legend data-i18n="budgetLabel">Примерный бюджет</legend>
             <div class="chip-row" data-chip-group="budget">
               <button type="button" class="chip is-active" data-value="60-120 GEL">60-120</button>
               <button type="button" class="chip" data-value="130-200 GEL">130-200</button>
               <button type="button" class="chip" data-value="200-270 GEL">200-270</button>
+              <button type="button" class="chip" data-value="270+ GEL">270+</button>
             </div>
           </fieldset>
 
@@ -133,11 +136,11 @@
 
           <label>
             <span data-i18n="commentLabel">Комментарий</span>
-            <textarea name="comment" id="order-comment" rows="2" data-i18n-placeholder="commentPlaceholder" placeholder="Цвета, повод, адрес или пожелания"></textarea>
+            <textarea name="comment" id="order-comment" rows="2" data-i18n-placeholder="commentPlaceholder" placeholder="Цвета, адрес доставки, время или пожелания"></textarea>
           </label>
 
           <a class="btn btn-primary btn-full" href="https://wa.me/995595009529" target="_blank" rel="noopener" id="order-whatsapp" data-i18n="orderButton">Отправить в WhatsApp</a>
-          <p class="order-note" data-i18n="orderNote">Мы уточним состав букета и пришлем фото перед доставкой.</p>
+          <p class="order-note" data-i18n="orderNote">Бюджет 270+ подходит для крупных букетов, свадеб и индивидуальных композиций.</p>
         </form>
       </div>
     </section>
@@ -232,10 +235,10 @@
         <article class="collection-card">
           <img src="assets/photos/vase-peach-roses.jpg" alt="Персиковые розы и зелень в прозрачной вазе" loading="lazy" decoding="async">
           <div>
-            <p class="price">200-270 GEL</p>
+            <p class="price">270+ GEL</p>
             <h3 data-i18n="cardThreeTitle">Премиум букет</h3>
             <p data-i18n="cardThreeText">Более крупный формат для дня рождения, предложения, юбилея или важного события.</p>
-            <button type="button" class="text-btn" data-service="cardThree" data-budget="200-270 GEL" data-i18n="cardButton">Заказать похожий</button>
+            <button type="button" class="text-btn" data-service="cardThree" data-budget="270+ GEL" data-i18n="cardButton">Заказать похожий</button>
           </div>
         </article>
       </div>

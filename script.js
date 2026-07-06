@@ -23,19 +23,21 @@ const translations = {
     heroCaption: "Свежие букеты ручной сборки",
     orderKicker: "Быстрый заказ",
     orderTitle: "Собрать заказ",
-    orderIntro: "Выберите повод, бюджет и дату. Мы получим готовое сообщение в WhatsApp и быстро уточним детали букета.",
+    orderIntro: "Выберите повод, примерный бюджет и дату. Если нужен большой букет или оформление, выбирайте 270+, мы соберем индивидуальное предложение.",
     occasionLabel: "Повод",
-    occasionBouquet: "Букет",
+    occasionBirthday: "День рождения",
+    occasionRomance: "Романтика",
     occasionWedding: "Свадьба",
-    occasionDelivery: "Доставка",
-    budgetLabel: "Бюджет",
+    occasionThanks: "Благодарность",
+    occasionOther: "Другое",
+    budgetLabel: "Примерный бюджет",
     dateLabel: "Дата",
     nameLabel: "Имя",
     namePlaceholder: "Как к вам обращаться",
     commentLabel: "Комментарий",
-    commentPlaceholder: "Цвета, повод, адрес или пожелания",
+    commentPlaceholder: "Цвета, адрес доставки, время или пожелания",
     orderButton: "Отправить в WhatsApp",
-    orderNote: "Мы уточним состав букета и пришлем фото перед доставкой.",
+    orderNote: "Бюджет 270+ подходит для крупных букетов, свадеб и индивидуальных композиций.",
     aboutKicker: "О студии",
     aboutTitle: "Маленькая цветочная студия Батуми с большой любовью к цветам",
     aboutBody: "Mea Studio собирает букеты и композиции для любого повода: от спокойного \"думаю о тебе\" до свадьбы и большого праздника. Мы держим стиль мягким, свежим и живым, чтобы букет выглядел как подарок, а не как случайная покупка.",
@@ -78,9 +80,11 @@ const translations = {
     messageService: "Хочу похожий формат",
     noDate: "уточню в переписке",
     occasionValues: {
-      bouquet: "букет",
-      wedding: "свадьба",
-      delivery: "доставка"
+      birthday: "день рождения",
+      romance: "романтический подарок",
+      wedding: "свадьба или событие",
+      thanks: "благодарность",
+      other: "другое"
     }
   },
   en: {
@@ -104,19 +108,21 @@ const translations = {
     heroCaption: "Fresh hand-tied bouquets",
     orderKicker: "Quick order",
     orderTitle: "Build an order",
-    orderIntro: "Choose the occasion, budget and date. We will receive a ready WhatsApp message and quickly confirm the bouquet details.",
+    orderIntro: "Choose the occasion, approximate budget and date. For a large bouquet or floral styling, choose 270+ and we will prepare a custom proposal.",
     occasionLabel: "Occasion",
-    occasionBouquet: "Bouquet",
+    occasionBirthday: "Birthday",
+    occasionRomance: "Romance",
     occasionWedding: "Wedding",
-    occasionDelivery: "Delivery",
-    budgetLabel: "Budget",
+    occasionThanks: "Thank you",
+    occasionOther: "Other",
+    budgetLabel: "Approx. budget",
     dateLabel: "Date",
     nameLabel: "Name",
     namePlaceholder: "How should we call you",
     commentLabel: "Comment",
-    commentPlaceholder: "Colors, occasion, address or wishes",
+    commentPlaceholder: "Colors, delivery address, time or wishes",
     orderButton: "Send on WhatsApp",
-    orderNote: "We will confirm the flowers and send a photo before delivery.",
+    orderNote: "The 270+ budget is best for large bouquets, weddings and custom floral compositions.",
     aboutKicker: "About the studio",
     aboutTitle: "A little Batumi flower studio with a big love for flowers",
     aboutBody: "Mea Studio makes bouquets and floral compositions for any moment: from a quiet \"thinking of you\" to a wedding or a celebration. The style stays soft, fresh and alive, so the bouquet feels like a gift, not a random purchase.",
@@ -159,9 +165,11 @@ const translations = {
     messageService: "I want a similar format",
     noDate: "I will confirm in chat",
     occasionValues: {
-      bouquet: "bouquet",
-      wedding: "wedding",
-      delivery: "delivery"
+      birthday: "birthday",
+      romance: "romantic gift",
+      wedding: "wedding or event",
+      thanks: "thank-you gift",
+      other: "other"
     }
   },
   ka: {
@@ -185,19 +193,21 @@ const translations = {
     heroCaption: "ახალი ხელით შეკრული ბუკეტები",
     orderKicker: "სწრაფი შეკვეთა",
     orderTitle: "შეკვეთის შედგენა",
-    orderIntro: "აირჩიეთ შემთხვევა, ბიუჯეტი და თარიღი. WhatsApp-ში მზა შეტყობინებას მივიღებთ და ბუკეტის დეტალებს სწრაფად დავაზუსტებთ.",
+    orderIntro: "აირჩიეთ შემთხვევა, სავარაუდო ბიუჯეტი და თარიღი. დიდი ბუკეტის ან გაფორმებისთვის აირჩიეთ 270+ და ინდივიდუალურ შეთავაზებას მოვამზადებთ.",
     occasionLabel: "შემთხვევა",
-    occasionBouquet: "ბუკეტი",
+    occasionBirthday: "დაბადების დღე",
+    occasionRomance: "რომანტიკა",
     occasionWedding: "ქორწილი",
-    occasionDelivery: "მიტანა",
-    budgetLabel: "ბიუჯეტი",
+    occasionThanks: "მადლობა",
+    occasionOther: "სხვა",
+    budgetLabel: "სავარაუდო ბიუჯეტი",
     dateLabel: "თარიღი",
     nameLabel: "სახელი",
     namePlaceholder: "როგორ მოგმართოთ",
     commentLabel: "კომენტარი",
-    commentPlaceholder: "ფერები, შემთხვევა, მისამართი ან სურვილები",
+    commentPlaceholder: "ფერები, მიტანის მისამართი, დრო ან სურვილები",
     orderButton: "გაგზავნა WhatsApp-ში",
-    orderNote: "დავაზუსტებთ შემადგენლობას და მიტანამდე ფოტოს გამოგიგზავნით.",
+    orderNote: "270+ ბიუჯეტი უხდება დიდ ბუკეტებს, ქორწილებს და ინდივიდუალურ კომპოზიციებს.",
     aboutKicker: "სტუდიის შესახებ",
     aboutTitle: "პატარა ბათუმური ყვავილების სტუდია ყვავილების დიდი სიყვარულით",
     aboutBody: "Mea Studio ქმნის ბუკეტებსა და კომპოზიციებს ნებისმიერი მომენტისთვის: მშვიდი \"შენზე ვფიქრობ\"-იდან ქორწილამდე და დღესასწაულამდე. სტილი რჩება რბილი, ახალი და ცოცხალი, რომ ბუკეტი ნამდვილი საჩუქარი იყოს.",
@@ -240,16 +250,18 @@ const translations = {
     messageService: "მსგავსი ფორმატი მინდა",
     noDate: "მიმოწერაში დავაზუსტებ",
     occasionValues: {
-      bouquet: "ბუკეტი",
-      wedding: "ქორწილი",
-      delivery: "მიტანა"
+      birthday: "დაბადების დღე",
+      romance: "რომანტიკული საჩუქარი",
+      wedding: "ქორწილი ან ღონისძიება",
+      thanks: "მადლობის საჩუქარი",
+      other: "სხვა"
     }
   }
 };
 
 const state = {
   lang: "ru",
-  occasion: "bouquet",
+  occasion: "birthday",
   budget: "60-120 GEL",
   service: ""
 };
@@ -305,16 +317,26 @@ function buildMessage() {
   const dateValue = $("#order-date")?.value || dictionary.noDate;
   const nameValue = $("#order-name")?.value.trim();
   const commentValue = $("#order-comment")?.value.trim();
-  const lines = [
-    dictionary.messageHello,
+  const details = [
     `${dictionary.messageOccasion}: ${selectedLabel("occasion", state.occasion)}`,
     `${dictionary.messageBudget}: ${state.budget}`,
     `${dictionary.messageDate}: ${dateValue}`
   ];
+  const extra = [];
 
-  if (state.service) lines.push(`${dictionary.messageService}: ${state.service}`);
-  if (nameValue) lines.push(`${dictionary.messageName}: ${nameValue}`);
-  if (commentValue) lines.push(`${dictionary.messageComment}: ${commentValue}`);
+  if (state.service) extra.push(`${dictionary.messageService}: ${state.service}`);
+  if (nameValue) extra.push(`${dictionary.messageName}: ${nameValue}`);
+  if (commentValue) extra.push(`${dictionary.messageComment}: ${commentValue}`);
+
+  const lines = [
+    dictionary.messageHello,
+    "",
+    ...details
+  ];
+
+  if (extra.length) {
+    lines.push("", ...extra);
+  }
 
   return lines.join("\n");
 }
@@ -338,9 +360,14 @@ function setChip(group, value) {
 function presetService(serviceKey, budget) {
   const dictionary = translations[state.lang];
   const title = dictionary[`${serviceKey}Title`] || "";
+  const occasionByService = {
+    cardOne: "romance",
+    cardTwo: "thanks",
+    cardThree: "birthday"
+  };
   state.service = title;
   setChip("budget", budget);
-  setChip("occasion", serviceKey === "cardThree" ? "delivery" : "bouquet");
+  setChip("occasion", occasionByService[serviceKey] || "other");
   $("#order-comment").value = title;
   $("#quick-order").scrollIntoView({ behavior: "smooth", block: "center" });
   updateWhatsAppLinks();
@@ -379,7 +406,7 @@ function init() {
     link.addEventListener("click", () => {
       state.service = translations[state.lang].weddingTitle;
       setChip("occasion", "wedding");
-      setChip("budget", "200-270 GEL");
+      setChip("budget", "270+ GEL");
     });
   });
 
