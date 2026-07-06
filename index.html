@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mea Studio - цветы и доставка букетов в Батуми</title>
+  <meta name="description" content="Mea Studio: авторские букеты, свадебная флористика и доставка цветов по Батуми в день заказа. WhatsApp +995 595 009 529.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mea Studio - цветы в Батуми">
+  <meta property="og:description" content="Авторские букеты, свадебная флористика и доставка цветов по Батуми каждый день с 10:00 до 23:00.">
+  <meta property="og:image" content="assets/photos/hero-pink-rose-bouquet.jpg">
+  <meta name="theme-color" content="#2b3a2b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Noto+Serif+Georgian:wght@400;500;600&family=Noto+Sans+Georgian:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "Mea Studio",
+      "description": "Flower shop in Batumi with bouquets, wedding florals and same-day delivery.",
+      "image": "assets/photos/hero-pink-rose-bouquet.jpg",
+      "telephone": "+995595009529",
+      "priceRange": "60-270 GEL",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mikhail Lermontov St. 10",
+        "addressLocality": "Batumi",
+        "addressCountry": "GE"
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "23:00"
+      }],
+      "sameAs": ["https://www.instagram.com/mea.studio_/"]
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mea Studio home">
+      <span class="brand-script">Mea</span>
+      <span class="brand-text">STUDIO</span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#bouquets" data-i18n="navBouquets">Букеты</a>
+      <a href="#wedding" data-i18n="navWedding">Свадьбы</a>
+      <a href="#delivery" data-i18n="navDelivery">Доставка</a>
+      <a href="#contact" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="lang-btn is-active" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" class="lang-btn" data-lang="ka" aria-pressed="false">GE</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroKicker">Цветочная студия в Батуми</p>
+        <h1 id="hero-title" data-i18n="heroTitle">Цветы в Батуми</h1>
+        <p class="hero-sub" data-i18n="heroSub">Авторские букеты, свадебная флористика и доставка в день заказа. Собираем в Mea Studio и отправляем фото перед выездом.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/995595009529" target="_blank" rel="noopener" data-wa-link data-i18n="ctaWhatsapp">Заказать в WhatsApp</a>
+          <a class="btn btn-secondary" href="#bouquets" data-i18n="ctaBouquets">Смотреть букеты</a>
+        </div>
+        <dl class="hero-facts" aria-label="Studio facts">
+          <div>
+            <dt data-i18n="factHoursLabel">График</dt>
+            <dd data-i18n="factHours">10:00-23:00</dd>
+          </div>
+          <div>
+            <dt data-i18n="factPriceLabel">Букеты</dt>
+            <dd data-i18n="factPrice">от 60 GEL</dd>
+          </div>
+          <div>
+            <dt data-i18n="factSocialLabel">Instagram</dt>
+            <dd data-i18n="factSocial">4.7k подписчиков</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-side">
+        <figure class="hero-photo">
+          <img src="assets/photos/hero-pink-rose-bouquet.jpg" alt="Букет из розовой розы в светлой упаковке" fetchpriority="high" decoding="async">
+          <figcaption data-i18n="heroCaption">Свежие букеты ручной сборки</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="order-section section-pad" aria-labelledby="order-title">
+      <div class="order-layout">
+        <div class="order-intro">
+          <p class="eyebrow" data-i18n="orderKicker">Быстрый заказ</p>
+          <h2 id="order-title" data-i18n="orderTitle">Собрать заказ</h2>
+          <p data-i18n="orderIntro">Выберите повод, бюджет и дату. Мы получим готовое сообщение в WhatsApp и быстро уточним детали букета.</p>
+        </div>
+
+        <form class="order-panel" id="quick-order">
+          <fieldset>
+            <legend data-i18n="occasionLabel">Повод</legend>
+            <div class="chip-row" data-chip-group="occasion">
+              <button type="button" class="chip is-active" data-value="bouquet" data-i18n="occasionBouquet">Букет</button>
+              <button type="button" class="chip" data-value="wedding" data-i18n="occasionWedding">Свадьба</button>
+              <button type="button" class="chip" data-value="delivery" data-i18n="occasionDelivery">Доставка</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend data-i18n="budgetLabel">Бюджет</legend>
+            <div class="chip-row" data-chip-group="budget">
+              <button type="button" class="chip is-active" data-value="60-120 GEL">60-120</button>
+              <button type="button" class="chip" data-value="130-200 GEL">130-200</button>
+              <button type="button" class="chip" data-value="200-270 GEL">200-270</button>
+            </div>
+          </fieldset>
+
+          <div class="form-grid">
+            <label>
+              <span data-i18n="dateLabel">Дата</span>
+              <input type="date" name="date" id="order-date">
+            </label>
+            <label>
+              <span data-i18n="nameLabel">Имя</span>
+              <input type="text" name="name" id="order-name" autocomplete="name" data-i18n-placeholder="namePlaceholder" placeholder="Как к вам обращаться">
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="commentLabel">Комментарий</span>
+            <textarea name="comment" id="order-comment" rows="2" data-i18n-placeholder="commentPlaceholder" placeholder="Цвета, повод, адрес или пожелания"></textarea>
+          </label>
+
+          <a class="btn btn-primary btn-full" href="https://wa.me/995595009529" target="_blank" rel="noopener" id="order-whatsapp" data-i18n="orderButton">Отправить в WhatsApp</a>
+          <p class="order-note" data-i18n="orderNote">Мы уточним состав букета и пришлем фото перед доставкой.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Services">
+      <div class="marquee-track">
+        <div class="marquee-set">
+          <span>Bouquets</span>
+          <span>·</span>
+          <span>Wedding florals</span>
+          <span>·</span>
+          <span>Peonies</span>
+          <span>·</span>
+          <span>Same-day delivery</span>
+          <span>·</span>
+          <span>Author compositions</span>
+          <span>·</span>
+          <span>Batumi</span>
+          <span>·</span>
+          <span>Roses</span>
+          <span>·</span>
+        </div>
+        <div class="marquee-set" aria-hidden="true">
+          <span>Bouquets</span>
+          <span>·</span>
+          <span>Wedding florals</span>
+          <span>·</span>
+          <span>Peonies</span>
+          <span>·</span>
+          <span>Same-day delivery</span>
+          <span>·</span>
+          <span>Author compositions</span>
+          <span>·</span>
+          <span>Batumi</span>
+          <span>·</span>
+          <span>Roses</span>
+          <span>·</span>
+        </div>
+        <div class="marquee-set" aria-hidden="true">
+          <span>Bouquets</span>
+          <span>·</span>
+          <span>Wedding florals</span>
+          <span>·</span>
+          <span>Peonies</span>
+          <span>·</span>
+          <span>Same-day delivery</span>
+          <span>·</span>
+          <span>Author compositions</span>
+          <span>·</span>
+          <span>Batumi</span>
+          <span>·</span>
+          <span>Roses</span>
+          <span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-pad">
+      <div class="section-label">
+        <p class="eyebrow" data-i18n="aboutKicker">О студии</p>
+      </div>
+      <div class="about-copy">
+        <h2 data-i18n="aboutTitle">Маленькая цветочная студия Батуми с большой любовью к цветам</h2>
+        <p data-i18n="aboutBody">Mea Studio собирает букеты и композиции для любого повода: от спокойного "думаю о тебе" до свадьбы и большого праздника. Мы держим стиль мягким, свежим и живым, чтобы букет выглядел как подарок, а не как случайная покупка.</p>
+      </div>
+    </section>
+
+    <section class="collections section-pad" id="bouquets" aria-labelledby="collections-title">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="collectionsKicker">Ассортимент</p>
+        <h2 id="collections-title" data-i18n="collectionsTitle">Популярные форматы</h2>
+      </div>
+      <div class="collection-grid">
+        <article class="collection-card">
+          <img src="assets/photos/white-signature-bouquet.jpg" alt="Белый авторский букет в крафтовой упаковке" loading="lazy" decoding="async">
+          <div>
+            <p class="price">60-120 GEL</p>
+            <h3 data-i18n="cardOneTitle">Нежный букет</h3>
+            <p data-i18n="cardOneText">Легкая сезонная композиция для свидания, благодарности или маленького сюрприза.</p>
+            <button type="button" class="text-btn" data-service="cardOne" data-budget="60-120 GEL" data-i18n="cardButton">Заказать похожий</button>
+          </div>
+        </article>
+        <article class="collection-card">
+          <img src="assets/photos/hero-pink-rose-bouquet.jpg" alt="Розовый букет роз в белой упаковке" loading="lazy" decoding="async">
+          <div>
+            <p class="price">130-200 GEL</p>
+            <h3 data-i18n="cardTwoTitle">Пышная композиция</h3>
+            <p data-i18n="cardTwoText">Выразительный букет с розами, зеленью и фактурными сезонными цветами.</p>
+            <button type="button" class="text-btn" data-service="cardTwo" data-budget="130-200 GEL" data-i18n="cardButton">Заказать похожий</button>
+          </div>
+        </article>
+        <article class="collection-card">
+          <img src="assets/photos/vase-peach-roses.jpg" alt="Персиковые розы и зелень в прозрачной вазе" loading="lazy" decoding="async">
+          <div>
+            <p class="price">200-270 GEL</p>
+            <h3 data-i18n="cardThreeTitle">Премиум букет</h3>
+            <p data-i18n="cardThreeText">Более крупный формат для дня рождения, предложения, юбилея или важного события.</p>
+            <button type="button" class="text-btn" data-service="cardThree" data-budget="200-270 GEL" data-i18n="cardButton">Заказать похожий</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wedding-band section-pad" id="wedding" aria-labelledby="wedding-title">
+      <img src="assets/photos/wedding-burgundy-bouquet.jpg" alt="Свадебный букет с бордовыми и розовыми цветами" loading="lazy" decoding="async">
+      <div>
+        <p class="eyebrow" data-i18n="weddingKicker">Свадьбы и события</p>
+        <h2 id="wedding-title" data-i18n="weddingTitle">Флористика для дня, который хочется запомнить</h2>
+        <p data-i18n="weddingText">Букет невесты, бутоньерки, арка, столы и камерное оформление. Начинаем с настроения и цвета, потом собираем понятную смету.</p>
+        <a class="btn btn-secondary" href="#quick-order" data-preset="wedding" data-i18n="weddingButton">Обсудить свадьбу</a>
+      </div>
+    </section>
+
+    <section class="delivery section-pad" id="delivery" aria-labelledby="delivery-title">
+      <div class="section-header">
+        <p class="eyebrow" data-i18n="deliveryKicker">Доставка</p>
+        <h2 id="delivery-title" data-i18n="deliveryTitle">Просто заказать, легко согласовать</h2>
+      </div>
+      <div class="delivery-grid">
+        <article>
+          <span class="step">01</span>
+          <h3 data-i18n="stepOneTitle">Вы выбираете настроение</h3>
+          <p data-i18n="stepOneText">Повод, бюджет, любимые оттенки и желаемую дату можно сразу отправить в WhatsApp.</p>
+        </article>
+        <article>
+          <span class="step">02</span>
+          <h3 data-i18n="stepTwoTitle">Мы собираем букет</h3>
+          <p data-i18n="stepTwoText">Подбираем свежие цветы в текущем сезоне и показываем фото перед отправкой.</p>
+        </article>
+        <article>
+          <span class="step">03</span>
+          <h3 data-i18n="stepThreeTitle">Курьер везет по Батуми</h3>
+          <p data-i18n="stepThreeText">Доставка работает каждый день до 23:00, адрес можно уточнить в переписке.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" aria-labelledby="gallery-title">
+      <div class="section-header inline">
+        <div>
+          <p class="eyebrow" data-i18n="galleryKicker">Галерея</p>
+          <h2 id="gallery-title" data-i18n="galleryTitle">Собрано в студии</h2>
+        </div>
+        <a class="text-link" href="https://www.instagram.com/mea.studio_/" target="_blank" rel="noopener">@mea.studio_</a>
+      </div>
+      <div class="photo-grid">
+        <img src="assets/photos/gift-bouquet-hand.jpg" alt="Букет в руке на светлом фоне" loading="lazy" decoding="async">
+        <img src="assets/photos/white-rose-gift.jpg" alt="Белые розы в стеклянной вазе" loading="lazy" decoding="async">
+        <img src="assets/photos/floral-shop-counter.jpg" alt="Цветочный магазин с букетами у деревянной стойки" loading="lazy" decoding="async">
+        <img src="assets/photos/white-signature-bouquet.jpg" alt="Белый букет в крафтовой упаковке крупным планом" loading="lazy" decoding="async">
+        <img src="assets/photos/vase-peach-roses.jpg" alt="Розы персикового оттенка в вазе" loading="lazy" decoding="async">
+        <img src="assets/photos/wedding-burgundy-bouquet.jpg" alt="Бордовый свадебный букет крупным планом" loading="lazy" decoding="async">
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy">
+        <p class="eyebrow" data-i18n="contactKicker">Контакты</p>
+        <h2 id="contact-title" data-i18n="contactTitle">Подарите цветы сегодня</h2>
+        <ul class="contact-list">
+          <li><span data-i18n="contactHours">Каждый день · 10:00-23:00</span></li>
+          <li><span data-i18n="contactAddress">Mikhail Lermontov St. 10, Batumi</span></li>
+          <li><a href="https://wa.me/995595009529" target="_blank" rel="noopener" data-wa-link>WhatsApp · +995 595 009 529</a></li>
+          <li><a href="https://www.instagram.com/mea.studio_/" target="_blank" rel="noopener">Instagram · @mea.studio_</a></li>
+        </ul>
+        <div class="contact-actions">
+          <a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Mikhail+Lermontov+St.+10+Batumi+Mea+Studio" target="_blank" rel="noopener" data-i18n="mapsButton">Открыть карту</a>
+          <a class="btn btn-ghost-light" href="https://wa.me/995595009529" target="_blank" rel="noopener" data-wa-link data-i18n="ctaWhatsapp">Заказать в WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-wrap" title="Mikhail Lermontov St. 10, Batumi">
+        <iframe title="Mea Studio on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank" data-map-src="https://www.google.com/maps?q=Mikhail%20Lermontov%20St.%2010%20Batumi%20Mea%20Studio&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span data-i18n="footerNote">Цветы в Батуми · Flowers in Batumi</span>
+    <span>© 2026 Mea Studio</span>
+  </footer>
+
+  <a class="mobile-cta" href="https://wa.me/995595009529" target="_blank" rel="noopener" data-wa-link data-i18n="mobileCta">Заказать букет</a>
+  <script src="script.js"></script>
+</body>
+</html>

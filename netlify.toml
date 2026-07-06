@@ -1,0 +1,18 @@
+[build]
+  command = "rm -rf dist && mkdir -p dist/assets && cp index.html styles.css script.js robots.txt dist/ && cp -R assets/photos dist/assets/photos"
+  publish = "dist"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

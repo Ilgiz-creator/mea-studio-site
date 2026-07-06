@@ -1,0 +1,7 @@
+.DS_Store
+.thumbnail
+dist/
+uploads/
+support.js
+*.dc.html
+Mea Studio Landing (standalone).html
